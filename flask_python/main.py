@@ -13,8 +13,8 @@ def index():
 def search():
     division = flask.request.args.get('division')
     search = flask.request.args.get('search')
-    search_bar([division, search])
-    return flask.render_template('tab.html')
+    text = search_bar([division, search])
+    return text
 
 @app.route('/supplier_page')
 def suppliers():
