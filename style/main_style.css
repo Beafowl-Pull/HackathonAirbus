@@ -14,7 +14,10 @@ h1 {
     clear: both;
     width: 10%;
     height: 10%;
+    min-width: 20px;
+    min-height: 20px;
     margin-left: 5%;
+    position: absolute;
 }
 
 .center_img {
