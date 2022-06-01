@@ -15,6 +15,7 @@ class Metal:
         self.reauditinprogress = ReauditInProgress
         self.lbmarg = LBMARG
         self.rjc = RJC
+        self.error = False
 
     def display(self):
         print("Metal:\t\t\t\t", self.metal)
@@ -74,8 +75,10 @@ def get_element_by_id(metals: Metal, id: str):
 def get_search(metals, search: str, name: str):
     output = []
     for metal in metals:
-        if (get_element_by_id(metal, search).lower() in name.lower() or name.lower() in get_element_by_id(metal, search).lower()):
-            output.append(metal)
+        element = get_element_by_id(metal, search)
+        if (element != "error"):
+            if (element.lower() in name.lower() or name.lower() in element.lower()):
+                output.append(metal)
     if (output == []):
         print(f"error: no '{name}' in category '{search}'")
     return output
