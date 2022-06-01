@@ -90,8 +90,75 @@ def put_html_tab(tab, nbr_indent = 0):
     output += "  " * 4 + "</tr>\n"
     return output
 
+def add_header_part():
+    return """
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='static/header.css'>
+    <link rel="stylesheet" href='static/log-in.css'>
+    <link rel="stylesheet" href='static/tableau.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='static/footer_log-in.css'>
+    <link rel="icon" href="https://logodix.com/logo/884365.png" type="image/icon type">
+    <script src="../script.js"></script>
+    <title>Supplier conflict minerals tool</title>
+</head>
+<body>
+    <header>
+        <a href="main"><img src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt=""> </a>
+        <div id="links">
+            <a href="main" class="link" > Home </a>
+            <a href="register" class="link" > Declaration Forms </a>
+            <a href="getdata" class="link" > Get data </a>
+            <a href="suppliers" class="link" > Supplier page </a>
+            <a href="log-in" class="link" > Login </a>
+        </div>
+    </header>
+    <main>
+        <h1>Result for you research: </h1>
+        <div class=parsed>
+"""
+
+def add_footer_part():
+    return """
+        </div>
+        <a href="getdata" class="link2" > Another research? </a>
+    </main>
+    <footer>
+        <div class="footer">
+            <img class="image_left" src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt="">
+            <div id="links_f">
+                <a href="termofuse" class="link_f" > Term Of Use </a>
+                <a href="privacy" class="link_f" > Privacy Policy </a>
+                <a href="contact" class="link_f" > Contact Use </a>
+                <a href="cookie" class="link_f" > Cookie Settings </a>
+                <a> ©Airbus 2022 </a>
+            </div>
+            <div class="left">
+                <p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+                        <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+"""
+
 def tab_to_html(metals):
-    tab = ""
+    tab = add_header_part()
     tab += '<html lang="en">\n  <header>\n    <div class=parsed>\n      <table border="1">\n'
     classes = ["metal", "smelterid", "standardsmeltername", "state_province_region", "countrylocation", "companywebsitewithcmpolicy", "lastauditdate", "auditcycle", "reauditinprogress", "lbmarg", "rjc"]
     tab += put_html_tab(classes, 5)
@@ -100,7 +167,8 @@ def tab_to_html(metals):
         for i in classes:
             tab += " " * 10 + "<td>" + get_element_by_id(metal, i) + "</td>\n"
         tab += 8 * " " + "</tr>\n"
-    tab += '      </table>\n    </div>\n  </header>\n</html>'
+    tab += '      </table>\n'
+    tab += add_footer_part()
     return (tab)
 
 def search_bar(argv = []):

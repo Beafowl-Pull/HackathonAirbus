@@ -55,9 +55,6 @@ def registered():
     password = flask.request.args.get('password')
     database.register(login, password)
     return flask.render_template("register.html")
-@app.route("/tableau")
-def tableau():
-    return flask.render_template("tableau.html")
 
 @app.route("/suppliers")
 def suppliers():
