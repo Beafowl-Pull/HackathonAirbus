@@ -22,7 +22,6 @@ def suppliers():
 
 @app.route("/main")
 def main():
-    #search_bar(flask.request.args)
     return flask.render_template("main.html")
 
 app.run("127.0.0.1", 3945, debug=True)
