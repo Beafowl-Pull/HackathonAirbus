@@ -1,5 +1,5 @@
 console.log(`
 
-Théo Stoffelbach
+Théo Stoffelbach makes websites in Ukrainian.
 
 `);
