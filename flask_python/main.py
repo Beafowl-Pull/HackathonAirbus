@@ -17,9 +17,9 @@ def search():
     text = search_bar([division, search])
     return text
 
-@app.route('/suppliers')
-def suppliers():
-    return flask.render_template('suppliers.html')
+@app.route('/getdata')
+def get_data():
+    return flask.render_template('getdata.html')
 
 @app.route("/main")
 def main():
@@ -55,5 +55,12 @@ def registered():
     password = flask.request.args.get('password')
     database.register(login, password)
     return flask.render_template("register.html")
+@app.route("/tableau")
+def tableau():
+    return flask.render_template("tableau.html")
+
+@app.route("/suppliers")
+def suppliers():
+    return flask.render_template("suppliers.html")
 
 app.run("127.0.0.1", 3945, debug=True)
