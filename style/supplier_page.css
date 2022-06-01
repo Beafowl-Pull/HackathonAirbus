@@ -7,12 +7,12 @@ h1{
 .Scoring{
     width: 100%;
     margin-left : -15%;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 .color{
     width: 150px;
     margin-left: 60%; 
-    margin-top:-2%;
+    margin-top:-4%;
     
 }
 .rectangle1{
@@ -24,7 +24,7 @@ h1{
 }
 .Location{
     margin-left: -14.5%;
-    margin-top: 8%;
+    margin-top: -1.5%;
 }
 .rectangle2{
     width: 150px;
@@ -46,15 +46,42 @@ h1{
     height: 30px;
 }
 .mineral_conflict_use{
-    margin-left: -10.5%;
-    margin-top: 15%;
+    margin-left: -11%;
+    margin-top: -15%;
 }
 .rectangle4{
     width : 150px;
-    margin-top : -4%;
+    margin-top : -6%;
     margin-left: 60%;
     height: 30px;
     background-color : #F49019;
     ;
     
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.search-box{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #77D760;
+    height: 40px;
+    border-radius:40px;
+    padding: 10px;
+
+   
+}
+.search-btn{
+    color: white;
+    float: right;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background: #77D760;
+    display : flex;
+    justify-content: center;
+    align-items: center;
 }
