@@ -11,17 +11,16 @@
         <script src="../script.js"></script>
         <title>home</title>
     </head>
-
     <header>
         <a href="main"><img src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt=""> </a>
         <div id="links">
-            <a href="register" class="link" > Declaration Forms </a>
-            <a href="log-in" class="link" > Login </a>
-            <a href="suppliers" class="link" > Supplier page </a>
             <a href="main" class="link" > Home </a>
+            <a href="register" class="link" > Declaration Forms </a>
+            <a href="getdata" class="link" > Get data </a>
+            <a href="suppliers" class="link" > Supplier page </a>
+            <a href="log-in" class="link" > Login </a>
         </div>
     </header>
-
     <body> 
         <section class="title">
             <img class="center_img" id="image_maceo" src={{ url_for('static', filename='resp-supply-chains-human-rights.jpg') }} alt="resp-supply-chains-human-rights">
@@ -29,17 +28,7 @@
                 <h1>conflict minerals supplier monitoring </h1>
             </p>
         </section>
-
         <p>
-            <!-- <table>
-                <tr>
-                    <th>Filters : </th>
-                  <th><a href="main_division.html" class="linkt"> division </a></th>
-                  <th><a href="main_ref.html" class="linkt"> supplier ref </a></th>
-                  <th><a href="main_name.html" class="linkt"> supplier name </a></th>
-                  <th><a href="main_score.html" class="linkt"> site scoring </a></th>
-                </tr>
-            </table> -->
             <h2>risk assessment cockpit</h2>
             <img class="center_img" src={{ url_for('static', filename='cockpit.png') }} alt="cockpit">
             <h2>
@@ -78,7 +67,6 @@
                 </table>
             </article>
         </p>
-
         <footer>
             <div class="footer">
                 <img class="image_left" src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt="">
