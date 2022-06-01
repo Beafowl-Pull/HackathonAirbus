@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+    float: center;
+    border:solid black 1px;
+    border-radius:6px;
+    background-color: cadetblue;
+}
+
+.one {
+    background-color: rgb(63, 117, 119);
+}
+
+.parsed {
+    transform: translate(5%, 0%);
+    width: 90%;
+}
+
+tbody {
+    background-color: aqua;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+}
+
+.link2 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: flex;
+    transform: translate(-10%, 20%);
+    float: right;
+}
