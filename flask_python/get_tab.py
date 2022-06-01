@@ -88,18 +88,17 @@ def put_html_tab(tab, nbr_indent = 0):
     return output
 
 def tab_to_html(metals):
-    path = Path().absolute()
-    print(path, flush=True)
-    tab = open(f"{path}/templates/tab.html", "w")
-    tab.write('<html lang="en">\n  <header>\n    <div class=parsed>\n      <table border="1">\n')
+    tab = ""
+    tab += '<html lang="en">\n  <header>\n    <div class=parsed>\n      <table border="1">\n'
     classes = ["metal", "smelterid", "standardsmeltername", "state_province_region", "countrylocation", "companywebsitewithcmpolicy", "lastauditdate", "auditcycle", "reauditinprogress", "lbmarg", "rjc"]
-    tab.write(put_html_tab(classes, 5))
+    tab += put_html_tab(classes, 5)
     for metal in metals:
-        tab.write(8 * " " + "<tr>\n")
+        tab += 8 * " " + "<tr>\n"
         for i in classes:
-            tab.write(" " * 10 + "<td>" + get_element_by_id(metal, i) + "</td>\n")
-        tab.write(8 * " " + "</tr>\n")
-    tab.write('      </table>\n    </div>\n  </header>\n</html>')
+            tab += " " * 10 + "<td>" + get_element_by_id(metal, i) + "</td>\n"
+        tab += 8 * " " + "</tr>\n"
+    tab += '      </table>\n    </div>\n  </header>\n</html>'
+    return (tab)
 
 def search_bar(argv = []):
     if (len(argv) != 2):
@@ -108,5 +107,4 @@ def search_bar(argv = []):
     metals = get_search(metals, argv[0], argv[1])
     for i in metals:
         i.display()
-    tab_to_html(metals)
-    return 0
+    return tab_to_html(metals)
