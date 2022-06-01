@@ -30,3 +30,19 @@ a {
     color: white;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    #links {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 25px;
+    }
+  }
