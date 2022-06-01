@@ -12,8 +12,9 @@ h1 {
 
 #image_maceo {
     clear: both;
-    width: 10%;
-    height: 10%;
+    object-fit: contain;
+    width: 25%;
+    height: 25%;
     min-width: 20px;
     min-height: 20px;
     margin-left: 5%;
