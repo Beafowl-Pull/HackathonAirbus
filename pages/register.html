@@ -9,36 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/footer_log-in.css">
     <link rel="icon" href="https://logodix.com/logo/884365.png" type="image/icon type">
-
+    <script src="../script.js"></script>
     <title>Supplier conflict minerals tool</title>
 </head>
 <body>
     <header>
         <a href="main.html"><img src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt=""> </a>
         <div id="links">
-            <a href="/register" class="link" > Register </a>
-            <a href="/login" class="link" > Login </a>
-            <a href="/suppliers" class="link" > Supplier_page.html </a>
-            <a href="/main.html" class="link" > Home </a>
+            <a href="/pages/register.html" class="link" > Declaration Forms </a>
+            <a href="/pages/log-in.html" class="link" > Login </a>
+            <a href="/pages/suppliers.html" class="link" > Supplier page </a>
+            <a href="/pages/main.html" class="link" > Home </a>
         </div>
     </header>
     <main>
-        <h1>Register</h1>
+        <h1>Declaration Forms</h1>
 
         <div class="center">
         <div class="forms">
             <form action="/action_page.php">
               <label for="fname">Company</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Company">
           
               <label for="lorigin">Origin of products</label>
-              <input type="text" id="lorigin" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lorigin" name="lastname" placeholder="Origin of products">
               <label for="lmaterial">Materials used</label>
-              <input type="text" id="lmaterial" name="lastname" placeholder="Your last name..">
-              <label for="lproofs">Proofs</label>
-              <input type="text" id="lproofs" name="lastname" placeholder="Your last name..">
-              <label for="ldoc">Documents</label>
-              <input type="text" id="ldoc" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lmaterial" name="lastname" placeholder="Materials used">
+              <input type="checkbox" id="lproofs" name="lastname" placeholder="Proofs"> 
+              <label for="lproofs"> I hereby certify that the company is not buying minerals issued from conflict countries</label><br>
                       
               <input type="submit" value="Submit">
             </form>

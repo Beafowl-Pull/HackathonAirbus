@@ -11,14 +11,19 @@ h1 {
 }
 
 #image_maceo {
-    width: 10%;
-    height: 10%;
+    clear: both;
+    object-fit: contain;
+    width: 25%;
+    height: 25%;
+    min-width: 20px;
+    min-height: 20px;
     margin-left: 5%;
+    position: absolute;
 }
 
 .center_img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -26,10 +31,15 @@ h1 {
 
 h1 {
     text-align: center;
+    border: 20px solid transparent;
+    margin: 20px;
 }
 
 h2 {
     text-align: center;
+    text-align: center;
+    border: 20px solid transparent;
+    margin: 20px;
 }
 
 table {
@@ -37,12 +47,18 @@ table {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 article {
     margin-left: 10%;
 }
 
-#articles {
+#table {
     background-color: #f2f2f2;
+}
+
+.linkt {
+    color: #000000;
 }
