@@ -4,3 +4,32 @@ h1{
     justify-content: center;
     margin-top:2%;
 }
+.Scoring{
+    width: 100%;
+    margin-left : -15%;
+    margin-top: 5%;
+}
+.color{
+    width: 150px;
+    margin-left: 60%; 
+    margin-top:-2%;
+    
+}
+.rectangle1{
+    width: 150px;
+    margin-left:60%;
+    margin: top -3%;
+    background-color: #77D760;
+    color :#77D760;
+}
+.Location{
+    margin-left: -14.5%;
+    margin-top: 8%;
+}
+.rectangle2{
+    width: 150px;
+    margin-left : 60%;
+    margin-top :-2%;
+    background-color: #77D760;
+    color : #77D760;
+}
