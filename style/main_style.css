@@ -38,3 +38,11 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+article {
+    margin-left: 10%;
+}
+
+#articles {
+    background-color: #f2f2f2;
+}
