@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    return flask.render_template('main.html')
 
 @app.route('/search')
 def search():
