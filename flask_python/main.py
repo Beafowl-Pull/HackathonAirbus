@@ -2,6 +2,7 @@
 import flask
 from pathlib import Path
 from get_tab import search_bar
+import database
 
 app = flask.Flask(__name__)
 
@@ -46,6 +47,13 @@ def privacy():
 
 @app.route("/register")
 def register():
+    return flask.render_template("register.html")
+
+@app.route("/registered")
+def registered():
+    login = flask.request.args.get('login')
+    password = flask.request.args.get('password')
+    database.register(login, password)
     return flask.render_template("register.html")
 
 app.run("127.0.0.1", 3945, debug=True)
