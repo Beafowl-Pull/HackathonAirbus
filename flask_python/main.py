@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    return flask.render_template('main.html')
 
 @app.route('/search')
 def search():
@@ -18,7 +18,7 @@ def search():
 
 @app.route('/supplier_page')
 def suppliers():
-    return flask.render_template('supplier_page.html')
+    return flask.render_template('suppliers.html')
 
 @app.route("/main")
 def main():
