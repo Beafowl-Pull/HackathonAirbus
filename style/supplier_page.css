@@ -32,3 +32,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.search-txt {
+    width: 70%;
+}
+
+input[type=submit] {
+    width: 30%;
+}
+
+form {
+    display: flex;
+}
+
