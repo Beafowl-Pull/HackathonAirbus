@@ -16,9 +16,9 @@ def search():
     text = search_bar([division, search])
     return text
 
-@app.route('/supplier_page')
+@app.route('/suppliers')
 def suppliers():
-    return flask.render_template('supplier_page.html')
+    return flask.render_template('suppliers.html')
 
 @app.route("/main")
 def main():
