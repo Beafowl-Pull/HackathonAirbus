@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/header.css">
-    <link rel="stylesheet" href="../style/Log-in.css">
+    <link rel="stylesheet" href="../style/register.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/footer_log-in.css">
     <link rel="icon" href="https://logodix.com/logo/884365.png" type="image/icon type">
@@ -16,23 +16,29 @@
     <header>
         <a href="main.html"><img src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt=""> </a>
         <div id="links">
-            <a href="/pages/register.html" class="link" > Register </a>
-            <a href="/pages/login.html" class="link" > Login </a>
-            <a href="/pages/suppliers.html" class="link" > Supplier_page </a>
-            <a href="/pages/main.html" class="link" > Home </a>
+            <a href="/register" class="link" > Register </a>
+            <a href="/login" class="link" > Login </a>
+            <a href="/suppliers" class="link" > Supplier_page.html </a>
+            <a href="/main.html" class="link" > Home </a>
         </div>
     </header>
     <main>
-        <h1>Log-in</h1>
+        <h1>Declaration Forms</h1>
 
         <div class="center">
         <div class="forms">
             <form action="/action_page.php">
-              <label for="fname">Email</label>
-              <input type="text" id="fname" name="firstname" placeholder="Email">
-              <label for="lorigin">Password</label>
-              <input type="text" id="lorigin" name="lastname" placeholder="Password">                      
-              <input type="submit" value="Enter">
+              <label for="fname">Company</label>
+              <input type="text" id="fname" name="firstname" placeholder="Company">
+          
+              <label for="lorigin">Origin of products</label>
+              <input type="text" id="lorigin" name="lastname" placeholder="Origin of products">
+              <label for="lmaterial">Materials used</label>
+              <input type="text" id="lmaterial" name="lastname" placeholder="Materials used">
+              <input type="checkbox" id="lproofs" name="lastname" placeholder="Proofs"> 
+              <label for="lproofs"> I hereby certify that the company is not buying minerals issued from conflict countries</label><br>
+                      
+              <input type="submit" value="Submit">
             </form>
           </div>
         </div>
@@ -43,10 +49,10 @@
         <div class="footer">
             <img class="image_left" src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt="">
             <div id="links_f">
-                <a href="/pages/termofuse.html" class="link_f" > Term Of Use </a>
-                <a href="/pages/privacy.html" class="link_f" > Privacy Policy </a>
-                <a href="/pages/contact.html" class="link_f" > Contact Use </a>
-                <a href="/pages/cookie.html" class="link_f" > Cookie Settings </a>
+                <a href="/termofuse" class="link_f" > Term Of Use </a>
+                <a href="/privacy" class="link_f" > Privacy Policy </a>
+                <a href="/contact" class="link_f" > Contact Use </a>
+                <a href="/cookie" class="link_f" > Cookie Settings </a>
                 <a> ©Airbus 2022 </a>
             </div>
             <div class="left">
@@ -64,5 +70,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
