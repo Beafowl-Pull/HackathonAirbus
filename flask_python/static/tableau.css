@@ -9,31 +9,31 @@ table {
     float: center;
     border:solid black 1px;
     border-radius:6px;
-    background-color: rgb(150, 74, 30);
-}
+    background-color: rgb(90, 126, 224);
+  }
+  
+  .one {
+      background-color: rgb(102, 132, 230);
+  }
+  
+  .parsed {
+      transform: translate(5%, 0%);
+      width: 90%;
+  }
+  
+  tbody {
+      background-color: rgb(84, 99, 235);
+  }
+  
+  td, th, tr {
+      border: 1px solid black;
+      border-radius: 10px;
+      text-align: left;
+      -moz-border-radius: 5px;
+      padding: 5px;
+  }
 
-.one {
-    background-color: rgb(197, 62, 38);
-}
-
-.parsed {
-    transform: translate(5%, 0%);
-    width: 90%;
-}
-
-tbody {
-    background-color: rgb(129, 40, 40);
-}
-
-td, th {
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: left;
-    -moz-border-radius: 5px;
-    padding: 5px;
-} */
-
-.link2 {
+  .link2 {
     color: rgb(0, 0, 0);
     text-decoration: none;
     position: flex;

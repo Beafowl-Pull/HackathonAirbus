@@ -10,12 +10,16 @@ app = flask.Flask(__name__)
 def index():
     return flask.render_template('main.html')
 
+@app.route('/tab')
+def tab():
+    return flask.render_template('tab.html')
+
 @app.route('/search')
 def search():
     division = flask.request.args.get('division')
     search = flask.request.args.get('search')
-    text = search_bar([division, search])
-    return text
+    search_bar([division, search])
+    return flask.render_template('search.html')
 
 @app.route('/getdata')
 def get_data():
@@ -58,6 +62,11 @@ def registered():
 
 @app.route("/suppliers")
 def suppliers():
+    return flask.render_template("searching.html")
+
+@app.route("/searching")
+def searching():
     return flask.render_template("suppliers.html")
+
 
 app.run("127.0.0.1", 3945, debug=True)

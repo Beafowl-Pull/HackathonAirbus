@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={{ url_for('static', filename='header.css') }}>
-    <link rel="stylesheet" href={{ url_for('static', filename='log-in.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='footer.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='tableau.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='search.css') }}>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href={{ url_for('static', filename='footer_log-in.css') }}>
-    <link rel="icon" href="https://logodix.com/logo/884365.png" type="image/icon type">
-    <script src="../script.js"></script>
     <title>Supplier conflict minerals tool</title>
 </head>
 <body>
@@ -24,22 +23,9 @@
         </div>
     </header>
     <main>
-        <h1>Log-in</h1>
-
-        <div class="center">
-        <div class="forms">
-            <form action="/action_page.php">
-              <label for="fname">Email</label>
-              <input type="text" id="fname" name="firstname" placeholder="Email">
-              <label for="lorigin">Password</label>
-              <input type="text" id="lorigin" name="lastname" placeholder="Password">                      
-              <input type="submit" value="Enter">
-            </form>
-          </div>
-        </div>
-
+        <h1>Result of your search</h1>
+        <iframe src="tab" width="300" height="300" frameBorder="0";></iframe>
     </main>
-
     <footer>
         <div class="footer">
             <img class="image_left" src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt="">

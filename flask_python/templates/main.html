@@ -7,8 +7,8 @@
         <link rel="stylesheet" href={{ url_for('static', filename='header.css') }}>
         <link rel="stylesheet" href={{ url_for('static', filename='footer.css') }}>
         <link rel="stylesheet" href={{ url_for('static', filename='main_style.css') }}>
-        <link rel="stylesheet" href={{ url_for('static', filename='tableau.css') }}>
-        <title>home</title>
+        <!-- <link rel="stylesheet" href={{ url_for('static', filename='tableau.css') }}> -->
+        <title>Supplier conflict minerals tool</title>
     </head>
     <header>
         <a href="main"><img src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt=""> </a>
@@ -34,19 +34,23 @@
             <div class="pie animate" style="--p:20;--c:orange"> 20%<p style="font-size: small">risky</p></div>
             <div class="pie animate" style="--p:60;--c:lightgreen"> 60%<p style="font-size: small">clean</p></div>
             <div class="pie animate" style="--p:10;--c:white"> 10%<p style="font-size: small">no data</p></div>
-            <!-- <div class="pie animate" style="--p:90;--c:lightgreen"> 90%</div> -->
             </div>
-            <!-- <h2>
-                <select name="division">
-                    <option value="null">Division</option>
-                    <option value="plane">Plane</option>
-                    <option value="helicopter">Helicopter</option>
-                </select>
-            </h2> -->
         </p>
         <p>
             <h2>Top 5 critical suppliers</h2>
             <table>
+            <tr>
+                <th>metal</th>
+                <th>smelterid</th>
+                <th>standardsmeltername</th>
+                <th>state_province_region</th>
+                <th>countrylocation</th>
+                <th>lastauditdate</th>
+                <th>auditcycle</th>
+                <th>reauditinprogress</th>
+                <th>lbmarg</th>
+                <th>rjc</th>
+              </tr>
             <tr>
                 <td>Cobalt</td>
                 <td>CID003423</td>

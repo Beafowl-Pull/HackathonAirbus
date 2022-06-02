@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href={{ url_for('static', filename='footer_log-in.css') }}>
     <link rel="icon" href="https://logodix.com/logo/884365.png" type="image/icon type">
-    <script src="../script.js"></script>
     <title>Supplier conflict minerals tool</title>
 </head>
 <body>
@@ -28,17 +27,15 @@
 
         <div class="center">
         <div class="forms">
-            <form action="/action_page.php">
+            <form action="">
               <label for="fname">Company</label>
               <input type="text" id="fname" name="firstname" placeholder="Company">
-          
               <label for="lorigin">Origin of products</label>
               <input type="text" id="lorigin" name="lastname" placeholder="Origin of products">
               <label for="lmaterial">Materials used</label>
               <input type="text" id="lmaterial" name="lastname" placeholder="Materials used">
               <input type="checkbox" id="lproofs" name="lastname" placeholder="Proofs"> 
               <label for="lproofs"> I hereby certify that the company is not buying minerals issued from conflict countries</label><br>
-                      
               <input type="submit" value="Submit">
             </form>
           </div>
