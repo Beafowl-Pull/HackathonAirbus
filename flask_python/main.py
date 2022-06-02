@@ -51,10 +51,10 @@ def register():
 
 @app.route("/registered")
 def registered():
-    login = flask.request.args.get('login')
+    email = flask.request.args.get('email')
     password = flask.request.args.get('password')
-    database.register(login, password)
-    return flask.render_template("register.html")
+    database.register(email, password)
+    return flask.render_template("/")
 
 @app.route("/suppliers")
 def suppliers():

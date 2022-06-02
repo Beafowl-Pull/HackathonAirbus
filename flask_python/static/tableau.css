@@ -9,11 +9,11 @@ table {
     float: center;
     border:solid black 1px;
     border-radius:6px;
-    background-color: cadetblue;
+    background-color: rgb(150, 74, 30);
 }
 
 .one {
-    background-color: rgb(63, 117, 119);
+    background-color: rgb(197, 62, 38);
 }
 
 .parsed {
@@ -22,7 +22,7 @@ table {
 }
 
 tbody {
-    background-color: aqua;
+    background-color: rgb(129, 40, 40);
 }
 
 td, th {

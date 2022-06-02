@@ -7,8 +7,7 @@
         <link rel="stylesheet" href={{ url_for('static', filename='header.css') }}>
         <link rel="stylesheet" href={{ url_for('static', filename='footer.css') }}>
         <link rel="stylesheet" href={{ url_for('static', filename='main_style.css') }}>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <script src="../script.js"></script>
+        <link rel="stylesheet" href={{ url_for('static', filename='tableau.css') }}>
         <title>home</title>
     </head>
     <header>
@@ -30,44 +29,89 @@
         </section>
         <p>
             <h2>risk assessment cockpit</h2>
-            <img class="center_img" src={{ url_for('static', filename='cockpit.png') }} alt="cockpit">
-            <h2>
+            <div class="center">
+            <div class="pie animate" style="--p:10;--c:red"> 10% <p style="font-size: small">very risky</p></div>
+            <div class="pie animate" style="--p:20;--c:orange"> 20%<p style="font-size: small">risky</p></div>
+            <div class="pie animate" style="--p:60;--c:lightgreen"> 60%<p style="font-size: small">clean</p></div>
+            <div class="pie animate" style="--p:10;--c:white"> 10%<p style="font-size: small">no data</p></div>
+            <!-- <div class="pie animate" style="--p:90;--c:lightgreen"> 90%</div> -->
+            </div>
+            <!-- <h2>
                 <select name="division">
                     <option value="null">Division</option>
                     <option value="plane">Plane</option>
                     <option value="helicopter">Helicopter</option>
                 </select>
-            </h2>
+            </h2> -->
         </p>
         <p>
-            <h2>Top 50 critical suppliers</h2>
-            <table id="table">
-                <tr>
-                    <th>ref</th>
-                    <th>division</th>
-                    <th>supplier ref</th>
-                    <th>supplier name</th>
-                    <th>site scoring</th>
-                </tr>
+            <h2>Top 5 critical suppliers</h2>
+            <table>
+            <tr>
+                <td>Cobalt</td>
+                <td>CID003423</td>
+                <td>Chemaf Usoke</td>
+                <td>Lubumbashi, Haut-Katanga</td>
+                <td>CONGO, DEMOCRATIC REPUBLIC OF THE</td>
+                <td>4/30/2019</td>
+                <td>1 Year</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            <tr>
+                <td>Cobalt</td>
+                <td>CID003264</td>
+                <td>Chemaf Etoile</td>
+                <td>Lubumbashi, Haut-Katanga</td>
+                <td>CONGO, DEMOCRATIC REPUBLIC OF THE</td>
+                <td>5/4/2019</td>
+                <td>1 Year</td>
+                <td>yes</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cobalt</td>
+                <td>CID003261</td>
+                <td>Kamoto Copper Company</td>
+                <td>Kolwezi, Lualaba</td>
+                <td>CONGO, DEMOCRATIC REPUBLIC OF THE</td>
+                <td>2/18/2021</td>
+                <td>1 Year</td>
+                <td>yes</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tungsten</td>
+                <td>CID000966</td>
+                <td>Kennametal Fallon</td>
+                <td>Fallon, Nevada</td>
+                <td>UNITED STATES OF AMERICA</td>
+                <td>2/1/2022</td>
+                <td>3 Year</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>CID000981</td>
+                <td>Kojima Chemicals Co., Ltd.</td>
+                <td>Sayama, Saitama</td>
+                <td>JAPAN</td>
+                <td>9/10/2020</td>
+                <td>3 Year</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
             </table>
             <section id="la"></section>
         </p>
+        <h2>The map of all the suppliers in the system is displayed below.</h2>
         <iframe src="map" width="300" height="300" frameBorder="0";></iframe>
-        <!-- <p>
-            <h2>Export</h2>
-            <img class="center_img" src={{ url_for('static', filename='conflict_minerals.png') }} alt="conflict_minerals">
-        </p> -->
-        <!-- <p>
-            <h2>Documental ressources</h2>
-            <article>
-                <table id="table">
-                    <tr>
-                      <th>info</th>
-                      <th>site scoring</th>
-                    </tr>
-                </table>
-            </article>
-        </p> -->
         <footer>
             <div class="footer">
                 <img class="image_left" src="https://1000marcas.net/wp-content/uploads/2020/01/Airbus-emblema-600x338.jpg" alt="">
