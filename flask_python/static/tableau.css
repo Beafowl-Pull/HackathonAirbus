@@ -4,6 +4,7 @@
 
 table {
     border-collapse: separate;
+    border-spacing: 0;
     width: 100%;
     float: center;
     border:solid black 1px;
@@ -24,12 +25,13 @@ tbody {
     background-color: aqua;
 }
 
-table, td, th {
+td, th {
     border: 1px solid black;
     border-radius: 10px;
+    text-align: left;
     -moz-border-radius: 5px;
     padding: 5px;
-}
+} */
 
 .link2 {
     color: rgb(0, 0, 0);

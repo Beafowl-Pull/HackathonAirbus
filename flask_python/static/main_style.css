@@ -63,6 +63,13 @@ article {
     color: #000000;
 }
 
-/* iframe {
-    bo
-} */
+iframe {
+    width: 1500px;
+    height: 1000px;
+    margin: 0 auto;
+    display: block;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}

@@ -4,15 +4,13 @@
 }
 
 footer {
-    position:static;
+    position: static;
     bottom: 0;
-
     width: 100%;
     min-height: 60px;
     height: auto;
-
     background: #081F57;
-    display: flex;
+    display: block;
     align-items: end;
     justify-content: space-between;
 }
@@ -35,7 +33,8 @@ footer img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
+    position: relative;
 }
 
 .left {
